@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tables and Forms</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 class=header>Menu</h1>
+        <table>
+            <thead>
+                Babur Shah Resturant
+            </thead>
+            <tr>
+                <th>Meal's Name</th>
+                <th>Ingredients</th>
+                <th>Price</th>
+                <th>Meal's Image</th>
+            </tr>
+            <tr>
+                <td class="bold">Indian Biryani</td>
+                <td>
+                    <ul>
+                        <li>Vegetable oil</li>
+                        <li>Potatoes</li>
+                        <li>Onions</li>
+                        <li>Garlic</li>
+                        <li>Fresh ginger root</li>
+                        <li>Tomatoes</li>
+                        <li>Salt</li>
+                        <li>Ground cumin</li>
+                        <li>Chili powder</li>
+                        <li>Ground black pepper</li>
+                        <li>Ground turmeric</li>
+                        <li>Plain yogurt</li>
+                        <li>Chopped fresh mint leaves</li>
+                        <li>Ground cardamom</li>
+                        <li>Cinnamon stick</li>
+                        <li>Boneless, skinless chicken pieces</li>
+                        <li>Basmati rice</li>
+                        <li>Cloves</li>
+                        <li>Powdered saffron</li>
+                        <li>Chicken stock</li>
+                    </ul>
+                </td>
+                <td class="bold"><strong>100</strong> Afghanis per serving</td>
+                <td><img src="Biryani.jpg" href="Biryani.jpg" class="FillCell" /></td>
+            </tr>
+        </table>
+        <br />
+        <h2>Place your order today!</h2><br/>
+        <h1>Contact us:</h1>
+        <form class="consistent" action="#" method="post">
+            <label for="name"><strong>Name:</strong></label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="subject"><strong>Your order:</strong></label>
+            <input type="text" id="order" name="order" required />
+
+            <label for="message"><strong>Specifics:</strong></label>
+            <textarea id="specifics" name="specifics" rows="4" required></textarea>
+
+            <p><strong>How should be reach out to you?</strong></p>
+            <label><input type="radio" name="contactMethod" value="email" required /> Email</label><br />
+            <label><input type="radio" name="contactMethod" value="phone" /> Phone</label><br />
+
+            <p><strong>Preferred site updates you'd like to receive:</strong></p>
+            <label><input type="checkbox" name="interest" value="updates" /> New menu addtions</label><br />
+            <label><input type="checkbox" name="interest" value="offers" /> Discounts</label><br />
+            <label><input type="checkbox" name="interest" value="news" /> Job Offers</label><br />
+            <button type="submit">Send Message</button>
+        </form>
+    </body>
+</html>

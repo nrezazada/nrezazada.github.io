@@ -1,0 +1,92 @@
+.header {
+    text-align: center;
+    font-size: 100px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+thead {
+    text-align: center;
+    font-size: larger;
+    font-family: sans-serif;
+}
+th {
+    border: solid 3px black;
+    padding: 5px;
+    text-align: center;
+}
+tr,
+td {
+    border: 3px solid black;
+    padding: 25px;
+    text-align: left;
+}
+
+.bold {
+    text-align: center;
+}
+
+.FillCell {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+h1 {
+    font-family: sans-serif
+}
+
+.consistent {
+    font-family: sans-serif;
+}
+
+th:hover,
+td:hover {
+    animation: hoverAnimation 0.1s forwards;
+}
+
+th,
+td {
+    animation: leaveAnimation 0.1s forwards;
+}
+@keyframes hoverAnimation {
+    0% {
+        background-color: burlywood;
+        transform: scale(1);
+    }
+
+    50% {
+        background-color: burlywood;
+        transform: scale(1.02);
+    }
+
+    100% {
+        background-color: burlywood;
+        transform: scale(1.03);
+    }
+}
+
+@keyframes leaveAnimation {
+    0% {
+        background-color: burlywood;
+        transform: scale(1.05);
+    }
+    100% {
+        background-color: transparent;
+        transform: scale(1);
+    }
+}
