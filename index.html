@@ -1,79 +1,243 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> A single htmal table and form</title>
-        <style>
-            <table{ 
-                border: 1px solid black;
-                border-collapse: collapse;
-            }
-            .tableimg{ 
-                max-width: 100px;
-                height: auto; 
-            }
-            tr, td {
-                border: 1px dushed green;
-                border-collapse: collapse;
-            }
-            tr:hover{
-                background-color: aqua;
-            }
-            label{
-                display: block;
-            }
-        </style>
-    </head>
-    <body style="background-color:rgba(216, 112, 185, 0.347); font-size: 20px;">
-        <table border="5px" style="width: 50%;" align="center">
-            <thead> 
-            <tr> 
-                <th> Item</th>
-                <th> Description</th>
-                <th> Image</th>
-            </tr>
-            </thead>
-            <tbody> 
-                <tr>
-                    <td>
-                        <ul>
-                            <li> Strawberries</li>
-                            <li> Blueberries</li>
-                        </ul>
-                    </td>
-                    <td> Fresh friut</td>
-                    <td rowspan="3"> 
-                        <img src="download.jpeg" class="tableimg"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 
-                        <ul>
-                            <li> Bread</li>
-                            <li> Butter</li>
-                        </ul>
-                    </td>
-                    <td> Bakery items</td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li> Milk</li>
-                            <li> Cheese</li>
-                        </ul>
-                    </td>
-                    <td> Dairy items</td>
-                </tr>
-            </tbody>
-         </table>
-         <form action="#" method="post">
-            <label> Name</label>
-            <input type="text" id="name" required>
-            <label> Email</label>
-            <input type="email" id="name" required>
-            <input type="radio" value="phone">Phone
-            <input type="radio" value="phone">Email
-            <button type="submit">submit</button>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hadisa Aryan Resume</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .profile {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .profile img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 5px;
+      }
+      h2 {
+        font-size: 24px;
+        color: #666;
+      }
+      .id-number {
+        font-size: 18px;
+        color: #555;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section h3 {
+        background-color: #0044cc;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .section p {
+        margin: 10px 0;
+      }
+      .contact-info,
+      .skills,
+      .languages {
+        display: flex;
+        justify-content: space-between;
+      }
+      .contact-info div,
+      .skills div,
+      .languages div {
+        width: 30%;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <img
+          src="IMG-20241017-WA0003.jpg"
+          alt="Profile Picture of Hadisa Aryan"
+        />
+        <h1>Hadisa Aryan</h1>
+        <p class="id-number">ID Number: 49877</p>
+        <h2>Computer Science Student at AUAF & Nursing Student</h2>
+      </div>
 
-         </form>
-    </body>
+      <div class="section">
+        <h3>Contact Information</h3>
+        <div class="contact-info">
+          <div>
+            <strong>Email:</strong> rajakumarindia333@gmail.com /
+            hadisa.aryan@auaf.edu.af<br />
+            <strong>Phone:</strong> +93 700282932<br />
+            <strong>WhatsApp:</strong> +93 773745932<br />
+          </div>
+          <div>
+            <strong>LinkedIn:</strong>
+            <a href="https://af.linkedin.com/in/hadisa-aryan-701733294"
+              >linkedin.com/hadisa-aryan</a
+            ><br />
+            <strong>Location:</strong> 1st District, Jade-e-Maiwand, Kabul,
+            Afghanistan
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>About Me</h3>
+        <p>
+          I am currently pursuing a Bachelor's degree in Computer Science at
+          AUAF to enter the world of technology and innovation. Additionally, I
+          am studying nursing at Jahan Institute, where I am passionate about
+          contributing to medicine and healthcare.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Work Experience</h3>
+        <ul>
+          <li>
+            <strong>Internship at Kim Hospital</strong> (Mar 2024 - Present) -
+            Kabul, Afghanistan
+          </li>
+          <li>
+            <strong>Internship at Islamic Bank of Afghanistan (IBA)</strong>
+            (Nov 2023 - Dec 2023) - Kabul, Afghanistan
+          </li>
+          <li>
+            <strong>English Instructor at Mahsa Academy</strong> (Jul 2023 - Nov
+            2023) - Kabul, Afghanistan
+          </li>
+          <li>
+            <strong>English Instructor at FORMULINC Organization</strong> (Jan
+            2023 - Jun 2023) - Kabul, Afghanistan
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Education</h3>
+        <ul>
+          <li>
+            <strong>Bachelor's in Computer Science</strong> - American
+            University of Afghanistan (Ongoing)
+          </li>
+          <li>
+            <strong
+              >Bachelor's in Management and Business Administration
+              (Nursing)</strong
+            >
+            - Jahan Health Education Institute (Ongoing)
+          </li>
+          <li>
+            <strong>High School Diploma</strong> - Tayeb Private High School,
+            Graduated 2022
+          </li>
+          <li>
+            <strong>English Language Diploma</strong> - Muslim English Language
+            Institute, Graduated 2022
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Skills</h3>
+        <div class="skills">
+          <div>
+            <ul>
+              <li>Microsoft Office</li>
+              <li>Microsoft Word & Excel</li>
+              <li>PowerPoint</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Social Media Management</li>
+              <li>Zoom & Google Drive</li>
+              <li>Teamwork & Communication</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Problem-Solving</li>
+              <li>Motivated & Organized</li>
+              <li>Resilience & Creativity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Languages</h3>
+        <div class="languages">
+          <div>
+            <strong>Dari:</strong> Native<br />
+            <strong>Pashto:</strong> C2 (Fluent)<br />
+          </div>
+          <div>
+            <strong>English:</strong> C1 (Advanced)<br />
+            <strong>Arabic:</strong> B1 (Intermediate)<br />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Future Goals</h3>
+        <p>
+          In the future, I aim to become a leading professional in the field of
+          computer science, focusing on developing innovative solutions that
+          bridge the gap between technology and healthcare. Additionally, I hope
+          to contribute significantly to the medical sector through my nursing
+          skills, helping improve healthcare systems in underdeveloped areas.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Interests</h3>
+        <ul>
+          <li>Technology and Innovation</li>
+          <li>Healthcare and Medicine</li>
+          <li>Community Service and Volunteering</li>
+          <li>Learning New Languages</li>
+          <li>Reading about AI and Machine Learning</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>References</h3>
+        <p>
+          <strong>Dr. Dawood</strong> - Head Doctor, Kim Hospital<br />Phone:
+          079 833 5116
+        </p>
+        <p>
+          <strong>Mr. Raz Mohammad Adel</strong> - Branch Manager, Islamic Bank
+          of Afghanistan<br />Email: jademaiwand@ibafg.af
+        </p>
+        <p>
+          <strong>Hasibullah Miryar</strong> - Manager, Mahsa Academy<br />Phone:
+          0774627620
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
